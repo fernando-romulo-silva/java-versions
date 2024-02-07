@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.fernando</groupId>
+	<artifactId>java-versions</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>java-versions-java-08</module>
+		<module>java-versions-java-09</module>
+		<module>java-versions-java-10</module>
+		<module>java-versions-java-11</module>
+		<module>java-versions-java-17</module>
+		<module>java-versions-java-21</module>
+		<module>java-versions-java-12</module>
+		<module>java-versions-java-15</module>
+		<module>java-versions-java-16</module>
+		<module>java-versions-java-13</module>
+		<module>java-versions-java-14</module>
+		<module>java-versions-java-07</module>
+		<module>java-versions-java-18</module>
+		<module>java-versions-java-19</module>
+		<module>java-versions-java-20</module>
+	</modules>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
+	</properties>
+	
+</project>
