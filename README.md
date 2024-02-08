@@ -5,13 +5,13 @@
 
 # Project status
 
-I use this project to learn new technologies related to Java.
+I use this project to learn new technologies related to Java.<br />
 I change this project constantly improving and adding new examples, click [here](docs/STATUS.md) to follow up.
 
 # About
 
-A simple test-new-features application, since I am a Java developer, this project helps me keep up with new features of this language.
-The examples are simple although most of them are running and you can see the result.
+A simple test-new-features application, since I am a Java developer, this project helps me keep up with new features of this language.<br />
+The examples are simple although most of them are running and you can see the result. <br />
 My focus here is ONLY final features, and preview features are ignored.
 
 # Technologies
