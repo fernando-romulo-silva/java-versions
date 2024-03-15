@@ -8,6 +8,11 @@
 I use this project to learn new technologies related to Java.<br />
 I change this project constantly improving and adding new examples, click [here](docs/STATUS.md) to follow up.
 
+# The Problem
+
+Java language has a ton of versions, each version version with new features, libraries, tools, etc.
+How can I be in the know all this stuff? I still have a life!
+
 # About
 
 A simple test-new-features application, since I am a Java developer, this project helps me keep up with new features of this language.<br />
