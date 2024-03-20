@@ -10,7 +10,7 @@ I change this project constantly improving and adding new examples, click [here]
 
 # The Problem
 
-Java language has a ton of versions, each version version with new features, libraries, tools, etc.
+Java language has a ton of versions, each version version with new features, libraries, tools, etc. <br />
 How can I be in the know all this stuff? I still have a life!
 
 # About
@@ -21,7 +21,7 @@ My focus here is ONLY final features, and preview features are ignored.
 
 # Technologies
 
-- Java
+- Java (7 .. 21)
 - Maven
 
 # Requirements
@@ -56,7 +56,7 @@ Please get this project and install it on your repository before continuing.
 To start, clone it:
 
 ```bash
-git clone https://github.com/fernando-romulo-silva/image-converter-service
+git clone https://github.com/fernando-romulo-silva/java-versions
 ```
 
-Just import it as a maven project on your IDE.
+Just import it as a maven project on your IDE and run the examples.

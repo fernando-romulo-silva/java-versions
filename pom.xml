@@ -23,6 +23,8 @@
 		<module>java-versions-java-18</module>
 		<module>java-versions-java-19</module>
 		<module>java-versions-java-20</module>
+		<module>java-versions-java-06</module>
+		<module>java-versions-java-05</module>
 	</modules>
 	
 	<properties>

@@ -1,6 +1,6 @@
 package org.java.versions.record_patterns;
 
-public class RecordPatterns3 {
+class RecordPatterns3 {
 
     enum Color { RED, GREEN, BLUE }
     

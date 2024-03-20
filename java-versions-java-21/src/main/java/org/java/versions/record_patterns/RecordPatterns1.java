@@ -2,7 +2,7 @@ package org.java.versions.record_patterns;
 
 import static java.lang.System.out;
 
-public class RecordPatterns1 {
+class RecordPatterns1 {
     
     public static void checkValue(final Object object) {
 	
