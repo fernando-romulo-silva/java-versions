@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodySubscriber;
 import java.net.http.HttpResponse.ResponseInfo;
 
-public class Main {
+class Main {
 
 
     public static void main(String[] args) throws IOException, InterruptedException, URISyntaxException {
@@ -18,16 +18,18 @@ public class Main {
 			  .GET()
 			  .build();
 
-	HttpResponse.BodyHandler b = new HttpResponse.BodyHandler<String>() {
+	HttpResponse.BodyHandler<String> b = new HttpResponse.BodyHandler<String>() {
 
 	    @Override
 	    public BodySubscriber<String> apply(ResponseInfo responseInfo) {
-		// TODO Auto-generated method stub
 		return null;
 	    }
 	};
 	
-	HttpResponse<String> response = HttpClient.newHttpClient().send(request, b);
+	try (final HttpClient newHttpClient = HttpClient.newHttpClient()) {
+	
+	    HttpResponse<String> response = newHttpClient.send(request, b);
+	}
     }
     
 }
