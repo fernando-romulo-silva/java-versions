@@ -8,23 +8,23 @@
 	<packaging>pom</packaging>
 	
 	<modules>
+		<module>java-versions-java-05</module>
+		<module>java-versions-java-06</module>
+		<module>java-versions-java-07</module>		
 		<module>java-versions-java-08</module>
 		<module>java-versions-java-09</module>
 		<module>java-versions-java-10</module>
 		<module>java-versions-java-11</module>
-		<module>java-versions-java-17</module>
-		<module>java-versions-java-21</module>
 		<module>java-versions-java-12</module>
-		<module>java-versions-java-15</module>
-		<module>java-versions-java-16</module>
 		<module>java-versions-java-13</module>
 		<module>java-versions-java-14</module>
-		<module>java-versions-java-07</module>
+		<module>java-versions-java-15</module>
+		<module>java-versions-java-16</module>
+		<module>java-versions-java-17</module>
 		<module>java-versions-java-18</module>
 		<module>java-versions-java-19</module>
 		<module>java-versions-java-20</module>
-		<module>java-versions-java-06</module>
-		<module>java-versions-java-05</module>
+		<module>java-versions-java-21</module>
 	</modules>
 	
 	<properties>
