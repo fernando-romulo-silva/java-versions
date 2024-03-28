@@ -1,0 +1,10 @@
+
+Identify the demanded modules
+$ jdeps --ignore-missing-deps --multi-release 17 --print-module-deps --recursive --module-path lib/* java-versions-java-09-others-mainapp-0.0.1-SNAPSHOT.jar > jre-deps.info
+
+Create a specialized jre for my modularized application
+$ jlink --module-path lib --add-modules $(cat jre-deps.info) --no-header-files --no-man-pages --output jre-new
+
+Now run!
+$ jre-new/bin/java -jar java-versions-java-09-others-mainapp-0.0.1-SNAPSHOT.jar
+    
