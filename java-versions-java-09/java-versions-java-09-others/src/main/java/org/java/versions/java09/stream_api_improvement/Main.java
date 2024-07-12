@@ -4,6 +4,7 @@ import static java.lang.System.out;
 import static java.util.stream.Collectors.toList;
 
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 class Main {
@@ -54,8 +55,23 @@ class Main {
 
     }   
     
+    static void regexImprovements() {
+	
+	final String text = "key=IAfpK, age=58, key=WNVdi, age=64, key=jp9zt, age=47,";
+	
+	long count = Pattern.compile("age=(.*?),").matcher(text)
+			.results() // Stream<MatchResult>
+			.map(mr -> mr.group(1).trim())
+			.mapToInt(Integer::parseInt)
+			.filter(i -> i > 50)
+			.count()
+       ;
+	
+	out.println(count);
+    }
+    
     
     public static void main(String[] args) {
-	
+	regexImprovements();
     }
 }
