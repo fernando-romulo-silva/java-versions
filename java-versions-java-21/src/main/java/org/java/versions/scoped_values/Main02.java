@@ -6,43 +6,43 @@ import java.util.concurrent.StructuredTaskScope;
 
 class Main02 {
 
-    private static final ScopedValue<String> CONTEXT = ScopedValue.newInstance();
+	private static final ScopedValue<String> CONTEXT = ScopedValue.newInstance();
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	ScopedValue.runWhere(CONTEXT, "TestValue", () -> {
+		ScopedValue.runWhere(CONTEXT, "TestValue", () -> {
 
-	    insideChildThread();
+			insideChildThread();
 
-	    try (var scope = new StructuredTaskScope<String>()) {
+			try (var scope = new StructuredTaskScope<String>()) {
 
-		scope.fork(() -> insideParentThread_1());
-		scope.fork(() -> insideParentThread_2());
+				scope.fork(() -> insideParentThread_1());
+				scope.fork(() -> insideParentThread_2());
 
-		scope.join();
-		
-	    } catch (final InterruptedException ex) {
-		ex.printStackTrace();
-	    }
-	});
-    }
+				scope.join();
 
-    static String insideParentThread_1() {
-	final var msg = "ThreadLocal Value in insideParentThread_1(): " + CONTEXT.get();
-	out.println(msg);
-	return msg;
-    }
+			} catch (final InterruptedException ex) {
+				ex.printStackTrace();
+			}
+		});
+	}
 
-    static String insideParentThread_2() {
-	final var msg = "ThreadLocal Value in insideParentThread_2(): " + CONTEXT.get();
-	out.println(msg);
-	return msg;
-    }
+	static String insideParentThread_1() {
+		final var msg = "ThreadLocal Value in insideParentThread_1(): " + CONTEXT.get();
+		out.println(msg);
+		return msg;
+	}
 
-    static String insideChildThread() {
-	final var msg = "ThreadLocal Value in insideChildThread(): " + CONTEXT.get();
-	System.out.println(msg);
-	return msg;
-    }
+	static String insideParentThread_2() {
+		final var msg = "ThreadLocal Value in insideParentThread_2(): " + CONTEXT.get();
+		out.println(msg);
+		return msg;
+	}
+
+	static String insideChildThread() {
+		final var msg = "ThreadLocal Value in insideChildThread(): " + CONTEXT.get();
+		System.out.println(msg);
+		return msg;
+	}
 
 }
