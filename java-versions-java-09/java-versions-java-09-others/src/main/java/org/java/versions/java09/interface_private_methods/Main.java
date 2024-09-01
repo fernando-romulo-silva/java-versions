@@ -7,8 +7,8 @@ class Main {
     }
 
     public static void main(String[] args) {
-	Sayable s = new PrivateInterface();
-	s.say();
-	// s.saySomething(); 
+        Sayable s = new PrivateInterface();
+        s.say();
+        // s.saySomething();
     }
 }

@@ -7,22 +7,22 @@ import java.lang.annotation.Repeatable;
 class Main {
 
     public @interface Schedules {
-	Schedule[] value();
+        Schedule[] value();
     }
 
     @Repeatable(Schedules.class)
     public @interface Schedule {
-	String dayOfMonth() default "first";
+        String dayOfMonth() default "first";
 
-	String dayOfWeek() default "Mon";
+        String dayOfWeek() default "Mon";
 
-	int hour() default 12;
+        int hour() default 12;
     }
 
     @Schedule(dayOfMonth = "last")
     @Schedule(dayOfWeek = "Fri")
     public void doPeriodicCleanup() {
-	
-	out.println("....");
+
+        out.println("....");
     }
 }

@@ -6,10 +6,10 @@ import javax.script.ScriptException;
 
 class Main {
 
-    
-    // This allowed developers to embed scripting languages such as JavaScript, Groovy, and others directly into their Java applications.
+    // This allowed developers to embed scripting languages such as JavaScript,
+    // Groovy, and others directly into their Java applications.
     public static void main(String[] args) throws ScriptException {
-	
+
         ScriptEngineManager manager = new ScriptEngineManager();
         ScriptEngine engine = manager.getEngineByName("Groovy");
 

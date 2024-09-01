@@ -9,26 +9,26 @@ import java.util.List;
 class Main {
 
     public static void main(String[] args) {
-	final List<Employee> list = new ArrayList<>();
+        final List<Employee> list = new ArrayList<>();
 
         list.add(new Employee("Vikram", 25, 10000L, true));
         list.add(new Employee("Dan", 24, 12000L, false));
         list.add(new Employee("John", 26, 9000L, false));
 
         list.stream()
-            .filter(e -> e.getSalary() > 10000L)
-            .map(employee -> employee.getName())
-            .collect(toList())
-            .forEach(e -> out.println(e));
-        
+                .filter(e -> e.getSalary() > 10000L)
+                .map(employee -> employee.getName()) // lambda version
+                .collect(toList())
+                .forEach(e -> out.println(e)); // lambda version
+
         list.stream()
-            .filter(e -> e.getSalary() > 10000L)
-            .map(Employee::new)
-            .map(Employee::getName)
-            .collect(toList())
-            .stream()
-            .collect(toList())
-            .forEach(out::println);     
+                .filter(e -> e.getSalary() > 10000L)
+                .map(Employee::new)
+                .map(Employee::getName)
+                .collect(toList())
+                .stream()
+                .collect(toList())
+                .forEach(out::println);
     }
-    
+
 }

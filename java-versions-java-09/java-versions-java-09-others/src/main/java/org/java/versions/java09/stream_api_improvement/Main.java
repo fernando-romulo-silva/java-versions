@@ -8,70 +8,70 @@ import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 class Main {
-    
-    static final List<Integer> FULL_LIST_01 = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-    static final List<Integer> FULL_LIST_02 = List.of(2, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-    
-    // Stream takeWhile method takes each element that matches its predicate. 
-    // It stops when it get unmatched element. 
-    // It returns a subset of elements that contains all matched elements, other part of stream is discarded.
-    static void takeWhileMethod() {
-	
-	List<Integer> list = FULL_LIST_01
-			.stream()
-			.takeWhile(i -> (i % 2 == 0))
-			.collect(toList());
-	
-	// This example returns an empty list because it fails at first list element, and takewhile stops here.
-	out.println(list); // []
-    }
 
-    // Stream dropWhile method returns result on the basis of order of stream elements.
-    static void dropWhileMethod() {
-	
-	List<Integer> list = FULL_LIST_02
-			.stream()
-			.dropWhile(i -> (i % 2 == 0))
-			.collect(toList());
-	
-	// 
-	out.println(list); // [3, 4, 5, 6, 7, 8, 9, 10]
-    }    
-    
-    // Stream can have null values also.
-    static void ofNullMethod() {
-	
-	Stream<Integer> value = Stream.ofNullable(null);     
-	
-	value.forEach(out::println); // This program will not produce any output.  
-    }    
-    
-    
-    // Stream can have null values also.
-    static void iterateMethod() {
-	
-	Stream.iterate(1, i -> i <= 10, i -> i * 3) //
-		.forEach(out::println); // 1 2 3
+	static final List<Integer> FULL_LIST_01 = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+	static final List<Integer> FULL_LIST_02 = List.of(2, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-    }   
-    
-    static void regexImprovements() {
-	
-	final String text = "key=IAfpK, age=58, key=WNVdi, age=64, key=jp9zt, age=47,";
-	
-	long count = Pattern.compile("age=(.*?),").matcher(text)
-			.results() // Stream<MatchResult>
-			.map(mr -> mr.group(1).trim())
-			.mapToInt(Integer::parseInt)
-			.filter(i -> i > 50)
-			.count()
-       ;
-	
-	out.println(count);
-    }
-    
-    
-    public static void main(String[] args) {
-	regexImprovements();
-    }
+	// Stream takeWhile method takes each element that matches its predicate.
+	// It stops when it get unmatched element.
+	// It returns a subset of elements that contains all matched elements, other
+	// part of stream is discarded.
+	static void takeWhileMethod() {
+
+		List<Integer> list = FULL_LIST_01
+				.stream()
+				.takeWhile(i -> (i % 2 == 0))
+				.collect(toList());
+
+		// This example returns an empty list because it fails at first list element,
+		// and takewhile stops here.
+		out.println(list); // []
+	}
+
+	// Stream dropWhile method returns result on the basis of order of stream
+	// elements.
+	static void dropWhileMethod() {
+
+		List<Integer> list = FULL_LIST_02
+				.stream()
+				.dropWhile(i -> (i % 2 == 0))
+				.collect(toList());
+
+		//
+		out.println(list); // [3, 4, 5, 6, 7, 8, 9, 10]
+	}
+
+	// Stream can have null values also.
+	static void ofNullMethod() {
+
+		Stream<Integer> value = Stream.ofNullable(null);
+
+		value.forEach(out::println); // This program will not produce any output.
+	}
+
+	// Stream can have null values also.
+	static void iterateMethod() {
+
+		Stream.iterate(1, i -> i <= 10, i -> i * 3) //
+				.forEach(out::println); // 1 2 3
+
+	}
+
+	static void regexImprovements() {
+
+		final String text = "key=IAfpK, age=58, key=WNVdi, age=64, key=jp9zt, age=47,";
+
+		long count = Pattern.compile("age=(.*?),").matcher(text)
+				.results() // Stream<MatchResult>
+				.map(mr -> mr.group(1).trim())
+				.mapToInt(Integer::parseInt)
+				.filter(i -> i > 50)
+				.count();
+
+		out.println(count);
+	}
+
+	public static void main(String[] args) {
+		regexImprovements();
+	}
 }

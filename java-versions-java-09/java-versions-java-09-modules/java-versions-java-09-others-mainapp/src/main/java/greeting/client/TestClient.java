@@ -8,17 +8,17 @@ import greeting.api.MessageService;
 
 public class TestClient {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	// The type greeting.util.NonExportedClass(from mod01) is not accessible
-	// greeting.util.NonExportedClass.NonExportedClass.
+		// The type greeting.util.NonExportedClass(from mod01) is not accessible
+		// greeting.util.NonExportedClass.NonExportedClass.
 
-	out.print("starting!");
+		out.print("starting!");
 
-	ServiceLoader<MessageService> ms = ServiceLoader.load(MessageService.class);
+		ServiceLoader<MessageService> ms = ServiceLoader.load(MessageService.class);
 
-	for (MessageService m : ms) {
-	    out.println(m.getMessage());
+		for (MessageService m : ms) {
+			out.println(m.getMessage());
+		}
 	}
-    }
 }

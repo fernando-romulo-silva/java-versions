@@ -6,10 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 class Main {
-    
-    // This allowed developers to analyze and process Java annotations at compile-time.
 
-
+    // This allowed developers to analyze and process Java annotations at
+    // compile-time.
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target(ElementType.METHOD)
@@ -18,7 +17,7 @@ class Main {
     }
 
     static class AnnotationProcessorExample {
-	
+
         @MyAnnotation("Example Value")
         public void myMethod() {
             // Method implementation

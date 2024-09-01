@@ -4,16 +4,17 @@ import java.io.Console;
 
 class Main {
 
-    // providing a simple way to read input from the console without resorting to System.in and Scanner.
-    public static void main(String[] args) {
-	Console console = System.console();
+	// providing a simple way to read input from the console without resorting to
+	// System.in and Scanner.
+	public static void main(String[] args) {
+		Console console = System.console();
 
-	if (console != null) {
-	    String userInput = console.readLine("Enter your name: ");
-	    console.printf("Hello, %s!\n", userInput);
-	} else {
-	    System.out.println("Console not available.");
+		if (console != null) {
+			String userInput = console.readLine("Enter your name: ");
+			console.printf("Hello, %s!\n", userInput);
+		} else {
+			System.out.println("Console not available.");
+		}
 	}
-    }
 
 }

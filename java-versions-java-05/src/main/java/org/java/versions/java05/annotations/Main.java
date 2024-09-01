@@ -8,39 +8,38 @@ import java.lang.annotation.Target;
 
 class Main {
 
-    static class Animal {
+	static class Animal {
 
-	@Deprecated
-	void myDeprecatedMethod() {
-	    System.out.println("hello n");
+		@Deprecated
+		void myDeprecatedMethod() {
+			out.println("hello n");
+		}
+
+		void eatSomething() {
+			out.println("eating something");
+		}
 	}
 
-	void eatSomething() {
-	    System.out.println("eating something");
+	static class Dog extends Animal {
+
+		@Override
+		void eatSomething() {
+			out.println("eating foods");
+		}
 	}
-    }
 
-    static class Dog extends Animal {
-
-	@Override
-	void eatSomething() {
-	    System.out.println("eating foods");
+	// ====================================================================
+	@Target(ElementType.METHOD)
+	@Retention(RetentionPolicy.RUNTIME)
+	@Inherited
+	static @interface MyAnnotation {
 	}
-    }
 
-    // ====================================================================
-    @Target(ElementType.METHOD)
-    @Retention(RetentionPolicy.RUNTIME)
-    @Inherited
-    static @interface MyAnnotation {
-    }
+	static class MyClass {
 
-    
-    static class MyClass{
-	
-	@MyAnnotation
-	void myMethod() {
-	    
+		@MyAnnotation
+		void myMethod() {
+
+		}
 	}
-    }
 }
