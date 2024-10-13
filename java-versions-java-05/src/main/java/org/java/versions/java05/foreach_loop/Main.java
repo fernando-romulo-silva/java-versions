@@ -11,7 +11,7 @@ class Main {
 
 		// traversing the array with for-each loop
 		for (int i : arr) {
-			out.println(i);
+			System.out.println(i);
 		}
 
 		// ================================================
@@ -23,7 +23,7 @@ class Main {
 
 		// traversing the list of elements using for-each loop
 		for (String s : list) {
-			out.println(s);
+			System.out.println(s);
 		}
 	}
 }

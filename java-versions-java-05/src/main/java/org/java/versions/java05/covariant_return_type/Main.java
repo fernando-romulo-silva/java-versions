@@ -1,5 +1,8 @@
 package org.java.versions.java05.covariant_return_type;
 
+import org.java.versions.java05.covariant_return_type.Main.A;
+import org.java.versions.java05.covariant_return_type.Main.B1;
+
 class Main {
 
 	static class A {
@@ -17,7 +20,7 @@ class Main {
 		}
 
 		void message() {
-			out.println("welcome to covariant return type");
+			System.out.println("welcome to covariant return type");
 		}
 	}
 

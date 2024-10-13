@@ -12,11 +12,11 @@ class Main {
 
 		@Deprecated
 		void myDeprecatedMethod() {
-			out.println("hello n");
+			System.out.println("hello n");
 		}
 
 		void eatSomething() {
-			out.println("eating something");
+			System.out.println("eating something");
 		}
 	}
 
@@ -24,7 +24,7 @@ class Main {
 
 		@Override
 		void eatSomething() {
-			out.println("eating foods");
+			System.out.println("eating foods");
 		}
 	}
 

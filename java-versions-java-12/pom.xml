@@ -7,4 +7,11 @@
   </parent>
   <groupId>org.javaversions</groupId>
   <artifactId>java-versions-java-12</artifactId>
+
+  <properties>
+    <maven.compiler.source>12</maven.compiler.source>
+    <maven.compiler.target>12</maven.compiler.target>
+    <maven.compiler.release>12</maven.compiler.release>
+  </properties>
+
 </project>

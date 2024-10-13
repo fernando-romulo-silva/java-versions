@@ -8,10 +8,11 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>java-versions-java-13</artifactId>
-	
+
 	<properties>
 		<maven.compiler.source>13</maven.compiler.source>
 		<maven.compiler.target>13</maven.compiler.target>
+		<maven.compiler.release>13</maven.compiler.release>
 	</properties>
-		
+
 </project>
