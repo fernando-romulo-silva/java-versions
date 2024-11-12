@@ -1,4 +1,4 @@
-package org.java.versions.scoped_values;
+package org.java.versions.java23.scoped_values;
 
 import static java.lang.System.out;
 
@@ -6,13 +6,12 @@ class Main01 {
 
     // Child Threads do not have access to Parent’s ThreadLocal!
 
-    // public static ThreadLocal<String> CONTEXT = ThreadLocal.withInitial(() ->
-    // null);
+    // static ThreadLocal<String> CONTEXT = ThreadLocal.withInitial(() -> null);
 
     // The InheritableThreadLocal class does the same thing as ThreadLocal,
     // but it also allows child thread to access the thread-local values from the
     // parent thread.
-    public static InheritableThreadLocal<String> CONTEXT = new InheritableThreadLocal();
+    static InheritableThreadLocal<String> CONTEXT = new InheritableThreadLocal();
     //
     // So if we create a million threads, we must create a million ThreadLocal
     // instances also.

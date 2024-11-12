@@ -12,7 +12,8 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.enablePreview>false</maven.compiler.enablePreview>
 	</properties>
-	
-	
+
+
 </project>

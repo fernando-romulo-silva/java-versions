@@ -1,4 +1,6 @@
-package org.java.versions.record_patterns;
+package org.java.versions.java21.record_patterns;
+
+import static java.lang.System.out;
 
 public class RecordPatterns2 {
 
@@ -11,7 +13,7 @@ public class RecordPatterns2 {
         if (obj instanceof Point p) {
             int x = p.x();
             int y = p.y();
-            System.out.println(x + y);
+            out.println(x + y);
         }
     }
 
@@ -20,7 +22,7 @@ public class RecordPatterns2 {
         if (obj instanceof Point(var x, var y)) {
 
             // you can access the x an y, like descontrunstructors JS
-            System.out.println(x + y);
+            out.println(x + y);
         }
     }
 }

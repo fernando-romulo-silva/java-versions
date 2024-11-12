@@ -13,8 +13,6 @@ This is the project tasks controller
 - [ ] Add Java 18
 - [ ] Add Java 19
 - [ ] Add Java 20
-- [ ] Add Java 22
-- [ ] Add Java 23
 
 ### In Progress
 
@@ -32,3 +30,5 @@ This is the project tasks controller
 - [x] Add Java 10
 - [x] Add Java 11
 - [x] Add Java 21
+- [x] Add Java 22
+- [x] Add Java 23

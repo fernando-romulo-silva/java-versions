@@ -1,4 +1,4 @@
-package org.java.versions.record_patterns;
+package org.java.versions.java21.record_patterns;
 
 import static java.lang.System.out;
 

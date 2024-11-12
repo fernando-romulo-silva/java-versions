@@ -1,4 +1,4 @@
-package org.java.versions.scoped_values;
+package org.java.versions.java23.scoped_values;
 
 import static java.lang.System.out;
 
@@ -16,8 +16,8 @@ class Main02 {
 
 			try (var scope = new StructuredTaskScope<String>()) {
 
-				scope.fork(() -> insideParentThread_1());
-				scope.fork(() -> insideParentThread_2());
+				scope.fork(Main02::insideParentThread_1);
+				scope.fork(Main02::insideParentThread_2);
 
 				scope.join();
 
@@ -41,7 +41,7 @@ class Main02 {
 
 	static String insideChildThread() {
 		final var msg = "ThreadLocal Value in insideChildThread(): " + CONTEXT.get();
-		System.out.println(msg);
+		out.println(msg);
 		return msg;
 	}
 

@@ -1,4 +1,4 @@
-package org.java.versions.pattern_matching_for_switch;
+package org.java.versions.java21.pattern_matching_for_switch;
 
 import static java.lang.System.out;
 
@@ -31,6 +31,15 @@ public class Main {
 			case WEDNESDAY -> "Margarita Wednesday";
 			case SATURDAY, SUNDAY -> "Party time!";
 			default -> "Boring work day...";
+		};
+	}
+
+	static String ne03() {
+		final Boolean a = Boolean.TRUE;
+
+		return switch (a) {
+			case true -> "To Be!";
+			case false -> "Not to be";
 		};
 	}
 

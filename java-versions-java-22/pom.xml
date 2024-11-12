@@ -7,13 +7,15 @@
 		<artifactId>java-versions</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>java-versions-java-14</artifactId>
+	<artifactId>java-versions-java-22</artifactId>
+
 
 	<properties>
-		<maven.compiler.source>14</maven.compiler.source>
-		<maven.compiler.target>14</maven.compiler.target>
-		<maven.compiler.release>14</maven.compiler.release>
+		<maven.compiler.source>22</maven.compiler.source>
+		<maven.compiler.target>22</maven.compiler.target>
+		<maven.compiler.release>22</maven.compiler.release>
 		<maven.compiler.enablePreview>false</maven.compiler.enablePreview>
 	</properties>
+
 
 </project>
