@@ -21,7 +21,7 @@ My focus here is ONLY final features, and preview features are ignored.
 
 # Technologies
 
-- Java (7 .. 21)
+- Java (7 .. 23)
 - Maven
 
 # Requirements
@@ -35,7 +35,7 @@ These are the requirements:
 git --version
 ```
 
-- Java version >= 21 
+- Java version >= 21
 
 ```bash
 # check the Java version
