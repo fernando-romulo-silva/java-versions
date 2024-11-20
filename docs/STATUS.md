@@ -4,8 +4,7 @@ This is the project tasks controller
 
 ### Todo
 
-- [ ] Add Java 18
-- [ ] Add Java 19
+- [ ] None
 
 ### In Progress
 
@@ -28,6 +27,8 @@ This is the project tasks controller
 - [x] Add Java 15
 - [x] Add Java 16
 - [x] Add Java 17
+- [x] Add Java 18
+- [x] Add Java 19
 - [x] Add Java 20
 - [x] Add Java 21
 - [x] Add Java 22
