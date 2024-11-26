@@ -5,6 +5,7 @@ import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+import java.util.ArrayList;
 
 class Main {
 
@@ -41,5 +42,15 @@ class Main {
 		void myMethod() {
 
 		}
+	}
+
+	public static void main(String[] args) {
+
+		new ArrayList<Integer>() {
+			{
+				add(1);
+				add(2);
+			}
+		};
 	}
 }
