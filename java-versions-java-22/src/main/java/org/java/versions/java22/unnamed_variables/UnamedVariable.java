@@ -125,7 +125,10 @@ public class UnamedVariable {
 
     static Map<String, List<Car<?>>> getCarsByFirstLetterWithUnnamedVariables(List<Car<?>> cars) {
         Map<String, List<Car<?>>> carMap = new HashMap<>();
-        cars.forEach(car -> carMap.computeIfAbsent(car.name().substring(0, 1), _ -> new ArrayList<>()).add(car));
+        cars.forEach(car -> carMap.computeIfAbsent(
+                car.name().substring(0, 1),
+                _ -> new ArrayList<>())
+                .add(car));
         return carMap;
     }
 

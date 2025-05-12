@@ -27,6 +27,7 @@
 		<module>java-versions-java-21</module>
 		<module>java-versions-java-22</module>
 		<module>java-versions-java-23</module>
+		<module>java-versions-java-24</module>
 	</modules>
 
 	<properties>

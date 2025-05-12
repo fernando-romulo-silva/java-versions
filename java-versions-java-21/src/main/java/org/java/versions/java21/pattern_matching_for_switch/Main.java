@@ -12,6 +12,7 @@ public class Main {
 	// Previously, switch was very limited: the cases could only test exact
 	// equality, and only for values of a few types: numbers, Enum types and
 	// Strings.
+	//
 	// This feature enhances switch to work on any type and to match on more complex
 	// patterns.
 
@@ -34,13 +35,8 @@ public class Main {
 		};
 	}
 
-	static String ne03() {
-		final Boolean a = Boolean.TRUE;
-
-		return switch (a) {
-			case true -> "To Be!";
-			case false -> "Not to be";
-		};
+	public static void main(String[] args) {
+		out.println(describe(DayOfWeek.FRIDAY));
 	}
 
 }

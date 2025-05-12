@@ -1,11 +1,12 @@
 package org.java.versions.java05.annotations;
 
+import static java.lang.System.out;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import java.util.ArrayList;
 
 class Main {
 
@@ -13,11 +14,11 @@ class Main {
 
 		@Deprecated
 		void myDeprecatedMethod() {
-			System.out.println("hello n");
+			out.println("hello n");
 		}
 
 		void eatSomething() {
-			System.out.println("eating something");
+			out.println("eating something");
 		}
 	}
 
@@ -25,7 +26,7 @@ class Main {
 
 		@Override
 		void eatSomething() {
-			System.out.println("eating foods");
+			out.println("eating foods");
 		}
 	}
 
@@ -42,15 +43,5 @@ class Main {
 		void myMethod() {
 
 		}
-	}
-
-	public static void main(String[] args) {
-
-		new ArrayList<Integer>() {
-			{
-				add(1);
-				add(2);
-			}
-		};
 	}
 }

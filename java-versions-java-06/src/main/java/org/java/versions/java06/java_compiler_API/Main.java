@@ -1,5 +1,7 @@
 package org.java.versions.java06.java_compiler_API;
 
+import static java.lang.System.out;
+
 import javax.tools.JavaCompiler;
 import javax.tools.ToolProvider;
 
@@ -11,9 +13,9 @@ public class Main {
 		int result = compiler.run(null, null, null, "path/to/YourClass.java");
 
 		if (result == 0) {
-			System.out.println("Compilation succeeded!");
+			out.println("Compilation succeeded!");
 		} else {
-			System.out.println("Compilation failed.");
+			out.println("Compilation failed.");
 		}
 	}
 }

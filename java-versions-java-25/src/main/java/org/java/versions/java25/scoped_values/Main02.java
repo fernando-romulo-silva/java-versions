@@ -1,4 +1,4 @@
-package org.java.versions.java23.scoped_values;
+package org.java.versions.java24.scoped_values;
 
 import static java.lang.System.out;
 

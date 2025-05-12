@@ -1,5 +1,7 @@
 package org.java.versions.java06.console_class;
 
+import static java.lang.System.out;
+
 import java.io.Console;
 
 class Main {
@@ -13,7 +15,7 @@ class Main {
 			String userInput = console.readLine("Enter your name: ");
 			console.printf("Hello, %s!\n", userInput);
 		} else {
-			System.out.println("Console not available.");
+			out.println("Console not available.");
 		}
 	}
 
