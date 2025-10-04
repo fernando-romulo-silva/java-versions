@@ -65,6 +65,7 @@ public class Main01 {
 		for (int i = 0; i < numberOfThreads; i++) {
 
 			final var virtualThread = Thread.ofVirtual().unstarted(new BlockedThread(i));
+			// or Thread.ofVirtual().start(runnable);
 
 			virtualThread.start();
 

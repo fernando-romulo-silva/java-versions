@@ -1,4 +1,4 @@
-package org.java.versions.java24.simple_source_file_and_instance_main_method;
+package org.java.versions.java25.simple_source_file_and_instance_main_method;
 
 import static java.lang.System.out;
 
