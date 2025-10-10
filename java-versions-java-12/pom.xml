@@ -5,7 +5,6 @@
     <artifactId>java-versions</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>org.javaversions</groupId>
   <artifactId>java-versions-java-12</artifactId>
 
   <properties>

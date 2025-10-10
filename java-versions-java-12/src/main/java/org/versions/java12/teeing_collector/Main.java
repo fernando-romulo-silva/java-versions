@@ -1,4 +1,4 @@
-package org.java.versions.java12.teeing_collector;
+package org.versions.java12.teeing_collector;
 
 import static java.lang.System.out;
 

@@ -33,3 +33,5 @@ This is the project tasks controller
 - [x] Add Java 21
 - [x] Add Java 22
 - [x] Add Java 23
+- [x] Add Java 24
+- [x] Add Java 25

@@ -1,4 +1,4 @@
-package org.java.versions.java12.support_for_compact_number_formatting;
+package org.versions.java12.support_for_compact_number_formatting;
 
 import static java.lang.System.out;
 

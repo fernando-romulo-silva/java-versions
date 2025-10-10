@@ -1,4 +1,4 @@
-package org.java.versions.java12.new_string_and_files_methods;
+package org.versions.java12.new_string_and_files_methods;
 
 import static java.lang.System.out;
 
