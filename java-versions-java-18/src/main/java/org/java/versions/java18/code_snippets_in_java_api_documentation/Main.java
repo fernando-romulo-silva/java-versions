@@ -1,4 +1,4 @@
-package org.java.versions.java19.code_snippets_in_java_api_documentation;
+package org.java.versions.java18.code_snippets_in_java_api_documentation;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

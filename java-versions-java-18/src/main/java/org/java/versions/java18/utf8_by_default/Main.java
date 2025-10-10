@@ -1,4 +1,4 @@
-package org.java.versions.java19.utf8_by_default;
+package org.java.versions.java18.utf8_by_default;
 
 import static java.lang.System.out;
 

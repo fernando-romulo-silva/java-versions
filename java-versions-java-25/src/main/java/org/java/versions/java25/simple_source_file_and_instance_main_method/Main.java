@@ -1,4 +1,3 @@
-import static java.lang.IO.println;
 
 // The new IO class provides the three most important input and output methods with print(), println(), and readln(). 
 // It is located in the java.lang package and is thus automatically available in all Java files without an import statement.

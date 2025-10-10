@@ -1,4 +1,4 @@
-package org.java.versions.java19.internet_address_resolution_spi;
+package org.java.versions.java18.internet_address_resolution_spi;
 
 import static java.lang.System.out;
 
